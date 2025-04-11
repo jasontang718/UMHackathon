@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>AI Assistant</title>
+    <script type="module">
+        async function sendMessage() {
+            const input = document.getElementById("userInput");
+            const chatArea = document.getElementById("chatArea");
+
+            const userText = input.value.trim();
+            if (!userText) return;
+
+            const userBubble = document.createElement("div");
+            userBubble.textContent = userText;
+            userBubble.style.cssText = "background: #0078FF; color: white; padding: 10px; margin: 10px 0; border-radius: 16px; align-self: flex-end; max-width: 80%;";
+            chatArea.appendChild(userBubble);
+
+            input.value = "";
+
+            try {
+                const colabUrl = 'https://e2ca-34-30-145-79.ngrok-free.app'; // Replace with your current ngrok URL
+                const apiUrl = `${colabUrl}/ask`;
+
+                const res = await fetch(apiUrl, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ query: userText })
+                });
+
+                if (!res.ok) {
+                    const errorData = await res.json();
+                    console.error("Fetch Error:", errorData);
+                    alert(`Failed to get a response: ${res.status} - ${JSON.stringify(errorData)}`);
+                    return;
+                }
+
+                const data = await res.json();
+                const reply = data.response;
+
+                const botBubble = document.createElement("div");
+                botBubble.innerHTML = formatResponse(reply);
+                botBubble.style.cssText = "background: #F1F1F1; padding: 10px; margin: 10px 0; border-radius: 16px; align-self: flex-start; max-width: 80%;";
+                chatArea.appendChild(botBubble);
+                chatArea.scrollTop = chatArea.scrollHeight;
+
+            } catch (error) {
+                alert("Failed to send the message or process the response.");
+                console.error("Error:", error);
+            }
+        }
+
+        function formatResponse(response) {
+            const trimmedResponse = response.trim();
+            const examples = trimmedResponse.split(/[•\n]/).map(item => item.trim()).filter(item => item);
+
+            if (examples.length > 1) {
+                const formattedResponse = examples
+                    .map(line => `<li>${line}</li>`)
+                    .join("");
+                return `<ul style="list-style-type: disc; padding-left: 20px;">${formattedResponse}</ul>`;
+            } else {
+                return `<p>${trimmedResponse}</p>`;
+            }
+        }
+
+        window.onload = () => {
+            const chatArea = document.getElementById("chatArea");
+            const botBubble = document.createElement("div");
+            botBubble.textContent = "How can I help you today?";
+            botBubble.style.cssText = "background: #F1F1F1; padding: 10px; margin: 10px 0; border-radius: 16px; align-self: flex-start; max-width: 80%;";
+            chatArea.appendChild(botBubble);
+            chatArea.scrollTop = chatArea.scrollHeight;
+        };
+
+        window.sendMessage = sendMessage;
+    </script>
+    <style>
+        body {
+            font-family: Inter, sans-serif;
+            background: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .chat-container {
+            width: 390px;
+            height: 844px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .header {
+            height: 50px; /* Slightly reduced header height */
+            background: #00B14F;
+            color: white;
+            font-size: 20px; /* Slightly reduced font size */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 15px; /* Added padding */
+        }
+        #chatArea {
+            flex: 1;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+        .input-area {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-top: 1px solid #eee; /* Lighter border */
+            background: #f9f9f9; /* Light background */
+        }
+        #userInput {
+            flex: 1;
+            padding: 10px 12px; /* Slightly reduced padding */
+            border-radius: 20px;
+            border: 1px solid #ddd; /* Lighter border */
+            outline: none;
+            font-size: 16px;
+        }
+        .send-btn {
+            margin-left: 10px;
+            background: #0078FF;
+            color: white;
+            padding: 10px 14px; /* Slightly reduced padding */
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .send-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="header">AI Assistant</div>
+        <div id="chatArea"></div>
+        <div class="input-area">
+            <input type="text" id="userInput" autocomplete="off" placeholder="Type your question..." onkeydown="if(event.key==='Enter') sendMessage()" />
+            <button class="send-btn" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</body>
+</html>
