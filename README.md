@@ -18,7 +18,7 @@ Steps:
 
 3)Save the folder 'dataset' downloaded from the git repo in your own google drive as 'dataset'
 
-4)Ctrl + F9 to run all
+4)Ctrl + F9 to run all in Google Colab once you are all set
 
 5)You will see the message 'Flask app is live at NgrokTunnel:',copy the url behind it
 
