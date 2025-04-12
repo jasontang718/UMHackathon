@@ -16,7 +16,7 @@ Steps:
 
 ![image](https://github.com/user-attachments/assets/313bb26e-f4fe-497f-8c5a-e4a05bb38a58)
 
-3)Save the folder 'dataset' downloaded from the git repo in your own google drive as 'dataset'
+3)Save all of the domain 3 datasets in your Google Drive as "dataset" folder 
 
 4)Ctrl + F9 to run all in Google Colab once you are all set
 
