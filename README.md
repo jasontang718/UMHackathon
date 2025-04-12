@@ -16,7 +16,7 @@ Steps:
 
 ![image](https://github.com/user-attachments/assets/313bb26e-f4fe-497f-8c5a-e4a05bb38a58)
 
-3)Save the folder 'dataset' downloaded from the git repo in your own google drive 
+3)Save the folder 'dataset' downloaded from the git repo in your own google drive as 'dataset'
 
 4)Ctrl + F9 to run all
 
