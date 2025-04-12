@@ -24,7 +24,7 @@ Steps:
 
 ![image](https://github.com/user-attachments/assets/08a5bef0-ee80-4a8e-beaa-850aca3f7a82)
 
-6)Open the html file with Visual Studio Code,replace the url in line 22 with the copied url.
+6)Open web.html file with Visual Studio Code,replace the url in line 22 with the copied url.
 
 ![image](https://github.com/user-attachments/assets/d97c43fc-6a98-47b5-8a8d-b2fedd9fb9f8)
 
@@ -36,8 +36,8 @@ Steps:
 
 ---------------------------------------------------
 Submission link 
+
 1)Figma
-1)Figma prototype link 
 
 https://www.figma.com/proto/juSePx7SoGQQn6vQip9ecB/Hackathon?page-id=0%3A1&node-id=161-2214&p=f&viewport=2339%2C295%2C0.6&t=nzch2HLYITwsdXJE-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=140%3A12111
 
