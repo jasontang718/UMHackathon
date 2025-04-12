@@ -34,4 +34,11 @@ Steps:
 
 9)Now you can chat with the chatbot
 
+---------------------------------------------------
+Submission link 
+1)Figma
+1)Figma prototype link 
+
+https://www.figma.com/proto/juSePx7SoGQQn6vQip9ecB/Hackathon?page-id=0%3A1&node-id=161-2214&p=f&viewport=2339%2C295%2C0.6&t=nzch2HLYITwsdXJE-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=140%3A12111
+
 
