@@ -2,7 +2,7 @@
 
 Steps: 
 
-1)Get Google API key in Google Colab
+1)Upload the file AI_analysis to your Google Colab
 
 	1.1)Click on 'Gemini API key' under 'Secret' 
 	1.2)Click 'Import Key from Google AI Studio' and you will get the API key
@@ -16,7 +16,7 @@ Steps:
 
 ![image](https://github.com/user-attachments/assets/313bb26e-f4fe-497f-8c5a-e4a05bb38a58)
 
-3)Save all of the domain 3 datasets in your Google Drive as "dataset" folder 
+3)Upload all of the domain 3 datasets in your Google Drive as "dataset" folder (After My Drive/ directory) 
 
 4)Ctrl + F9 to run all in Google Colab once you are all set
 
