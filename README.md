@@ -6,7 +6,7 @@
 
 •	Integrated the chatbot with Gemini API for real-time interaction and response generation. 
 
-## Collaborates with:
+## In collaboration with:
 
 • Ong Zheng He
 
