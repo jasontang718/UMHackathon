@@ -1,6 +1,17 @@
 # UMHackathon
 
+Description:
+•	Developed an intelligent chatbot assistant using AI technologies.
+•	Integrated the chatbot with Gemini API for real-time interaction and response generation. 
+
+Collaboraters:
+• Ong Zheng He
+• Ho Hoong Khuan
+• Lee Tong Hua
+• Soong Tze Yeng
+
 Steps: 
+
 
 1)Upload the file AI_analysis to your Google Colab
 
