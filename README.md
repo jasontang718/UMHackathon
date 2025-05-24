@@ -10,9 +10,9 @@
 
 • Ong Zheng He https://github.com/zhong617 
 
-• Ho Hoong Khuan
+• Ho Hoong Khuan https://github.com/zyllux
 
-• Lee Tong Hua
+• Lee Tong Hua https://github.com/Edwin1340
 
 • Soong Tze Yeng
 
