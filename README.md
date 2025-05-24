@@ -1,10 +1,10 @@
 # UMHackathon
 
-##Description:
+## Description:
 •	Developed an intelligent chatbot assistant using AI technologies.
 •	Integrated the chatbot with Gemini API for real-time interaction and response generation. 
 
-##Collaborates with:
+#Collaborates with:
 
 • Ong Zheng He
 
