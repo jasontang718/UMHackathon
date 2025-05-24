@@ -1,7 +1,9 @@
 # UMHackathon
 
 ## Description:
+
 •	Developed an intelligent chatbot assistant using AI technologies.
+
 •	Integrated the chatbot with Gemini API for real-time interaction and response generation. 
 
 ## Collaborates with:
