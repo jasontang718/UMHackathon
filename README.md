@@ -4,7 +4,7 @@
 •	Developed an intelligent chatbot assistant using AI technologies.
 •	Integrated the chatbot with Gemini API for real-time interaction and response generation. 
 
-#Collaborates with:
+## Collaborates with:
 
 • Ong Zheng He
 
@@ -14,7 +14,7 @@
 
 • Soong Tze Yeng
 
-##Steps: 
+## Steps: 
 
 
 1)Upload the file AI_analysis to your Google Colab
