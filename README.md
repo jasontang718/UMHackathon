@@ -4,10 +4,13 @@ Description:
 •	Developed an intelligent chatbot assistant using AI technologies.
 •	Integrated the chatbot with Gemini API for real-time interaction and response generation. 
 
-Collaboraters:
+Collaborater with:
 • Ong Zheng He
+
 • Ho Hoong Khuan
+
 • Lee Tong Hua
+
 • Soong Tze Yeng
 
 Steps: 
