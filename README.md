@@ -14,7 +14,7 @@
 
 • Lee Tong Hua https://github.com/Edwin1340
 
-• Soong Tze Yeng
+• Soong Tze Yeng https://github.com/soonggzz
 
 ## Steps: 
 
